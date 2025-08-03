@@ -1,0 +1,101 @@
+.board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.column {
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 250px;
+  min-width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.task-list {
+  min-height: 300px;
+  padding: 10px;
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+}
+
+.task {
+  background: #e3e3ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+
+  :active {
+    cursor: grabbing;
+  }
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.task-dialog {
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 300px;
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+  }
+
+  input[type='text'] {
+    padding: 6px 10px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    flex: 1;
+  }
+}
+
+button {
+  padding: 6px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
